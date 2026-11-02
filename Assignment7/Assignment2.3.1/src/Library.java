@@ -31,7 +31,6 @@ class Library {
         if (!found) System.out.println("(none)");
     }
 
-    // ---------- Task 2 ----------
     boolean borrowBook(String title) {
         for (int i = 0; i < books.size(); i++) {
             if (books.get(i).getTitle().equals(title)) {
