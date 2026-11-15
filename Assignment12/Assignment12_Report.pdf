@@ -1,0 +1,156 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 7 0 R 9 0 R 11 0 R ] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 1924 >>
+stream
+BT /F2 8 Tf 50 752.0 Td (ASSIGNMENT 12  |  GITHUB COPILOT) Tj ET
+0.78 G 50 730.0 m 562 730.0 l S 0 G
+BT /F2 20 Tf 50 718.0 Td (Using GitHub Copilot to Write and Explain Code) Tj ET
+BT /F2 13 Tf 50 681.4 Td (Calculator - Java assignment report) Tj ET
+BT /F2 13 Tf 50 654.4 Td (Goal and implementation) Tj ET
+BT /F1 10 Tf 50 627.5 Td (The Calculator is the model in a small MVC-style example. It stores a running integer total,) Tj ET
+BT /F1 10 Tf 50 611.7 Td (resets the total, adds non-negative integers, and returns the current value. Main is a) Tj ET
+BT /F1 10 Tf 50 595.9 Td (temporary console demonstration.) Tj ET
+BT /F1 10 Tf 50 580.1 Td (The add method rejects negative input with IllegalArgumentException. Zero is accepted) Tj ET
+BT /F1 10 Tf 50 564.3 Td (because the requirement specifically says negative integers must fail.) Tj ET
+BT /F2 13 Tf 50 548.5 Td (Calculator.java) Tj ET
+BT /F3 8.3 Tf 50 521.5 Td (public class Calculator {) Tj ET
+BT /F3 8.3 Tf 50 508.9 Td (    private int value;) Tj ET
+BT /F3 8.3 Tf 50 496.2 Td () Tj ET
+BT /F3 8.3 Tf 50 483.6 Td (    public void reset\(\) {) Tj ET
+BT /F3 8.3 Tf 50 470.9 Td (        value = 0;) Tj ET
+BT /F3 8.3 Tf 50 458.3 Td (    }) Tj ET
+BT /F3 8.3 Tf 50 445.6 Td () Tj ET
+BT /F3 8.3 Tf 50 433.0 Td (    public void add\(int number\) {) Tj ET
+BT /F3 8.3 Tf 50 420.3 Td (        if \(number < 0\) {) Tj ET
+BT /F3 8.3 Tf 50 407.7 Td (            throw new IllegalArgumentException\("Only non-negative integers can be added."\);) Tj ET
+BT /F3 8.3 Tf 50 395.0 Td (        }) Tj ET
+BT /F3 8.3 Tf 50 382.3 Td (        value += number;) Tj ET
+BT /F3 8.3 Tf 50 369.7 Td (    }) Tj ET
+BT /F3 8.3 Tf 50 357.0 Td () Tj ET
+BT /F3 8.3 Tf 50 344.4 Td (    public int getValue\(\) {) Tj ET
+BT /F3 8.3 Tf 50 331.7 Td (        return value;) Tj ET
+BT /F3 8.3 Tf 50 319.1 Td (    }) Tj ET
+BT /F3 8.3 Tf 50 306.4 Td (}) Tj ET
+BT /F1 8 Tf 50 28 Td (Assignment12  |  Page 1 of 3) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2884 >>
+stream
+BT /F2 8 Tf 50 752.0 Td (ASSIGNMENT 12  |  GITHUB COPILOT) Tj ET
+0.78 G 50 730.0 m 562 730.0 l S 0 G
+BT /F2 13 Tf 50 718.0 Td (Main.java - temporary demonstration) Tj ET
+BT /F3 8.3 Tf 50 691.0 Td (public class Main {) Tj ET
+BT /F3 8.3 Tf 50 678.4 Td (    public static void main\(String[] args\) {) Tj ET
+BT /F3 8.3 Tf 50 665.7 Td (        Calculator calculator = new Calculator\(\);) Tj ET
+BT /F3 8.3 Tf 50 653.1 Td () Tj ET
+BT /F3 8.3 Tf 50 640.4 Td (        calculator.add\(12\);) Tj ET
+BT /F3 8.3 Tf 50 627.8 Td (        calculator.add\(7\);) Tj ET
+BT /F3 8.3 Tf 50 615.1 Td (        calculator.add\(5\);) Tj ET
+BT /F3 8.3 Tf 50 602.4 Td (        System.out.println\("Sum: " + calculator.getValue\(\)\);) Tj ET
+BT /F3 8.3 Tf 50 589.8 Td () Tj ET
+BT /F3 8.3 Tf 50 577.1 Td (        calculator.reset\(\);) Tj ET
+BT /F3 8.3 Tf 50 564.5 Td (        System.out.println\("After reset: " + calculator.getValue\(\)\);) Tj ET
+BT /F3 8.3 Tf 50 551.8 Td () Tj ET
+BT /F3 8.3 Tf 50 539.2 Td (        try {) Tj ET
+BT /F3 8.3 Tf 50 526.5 Td (            calculator.add\(-3\);) Tj ET
+BT /F3 8.3 Tf 50 513.9 Td (        } catch \(IllegalArgumentException exception\) {) Tj ET
+BT /F3 8.3 Tf 50 501.2 Td (            System.out.println\("Error: " + exception.getMessage\(\)\);) Tj ET
+BT /F3 8.3 Tf 50 488.6 Td (        }) Tj ET
+BT /F3 8.3 Tf 50 475.9 Td (    }) Tj ET
+BT /F3 8.3 Tf 50 463.2 Td (}) Tj ET
+BT /F2 13 Tf 50 450.6 Td (How the program works) Tj ET
+BT /F1 10 Tf 50 423.7 Td (The private value field belongs to each Calculator object and starts at zero. reset\(\) clears) Tj ET
+BT /F1 10 Tf 50 407.9 Td (it. add\(number\) checks the argument before changing the total, so a rejected value does not) Tj ET
+BT /F1 10 Tf 50 392.1 Td (modify the calculator. getValue\(\) returns the stored total.) Tj ET
+BT /F1 10 Tf 50 376.3 Td (Main adds 12, 7, and 5, so it prints 24. It then resets the calculator, prints zero, and) Tj ET
+BT /F1 10 Tf 50 360.5 Td (catches the exception from trying to add -3.) Tj ET
+BT /F2 13 Tf 50 344.7 Td (README.md and Task 2) Tj ET
+BT /F1 10 Tf 50 317.7 Td (The README.md in this folder starts with the program idea, includes the Calculator source in) Tj ET
+BT /F1 10 Tf 50 301.9 Td (a fenced Java code block, and explains each method in plain language. The explanation was) Tj ET
+BT /F1 10 Tf 50 286.1 Td (edited to be concise and to clarify the input rule and the role of Main.) Tj ET
+BT /F2 13 Tf 50 270.3 Td (How I used GitHub Copilot) Tj ET
+BT /F1 10 Tf 50 243.4 Td (I used Copilot to turn the written requirements into a small Java implementation and a) Tj ET
+BT /F1 10 Tf 50 227.6 Td (readable explanation. I reviewed the generated code against the requirements, compiled it,) Tj ET
+BT /F1 10 Tf 50 211.8 Td (ran the demonstration, and checked both the normal sum and the negative-input behavior.) Tj ET
+BT /F1 8 Tf 50 28 Td (Assignment12  |  Page 2 of 3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2784 >>
+stream
+BT /F2 8 Tf 50 752.0 Td (ASSIGNMENT 12  |  GITHUB COPILOT) Tj ET
+0.78 G 50 730.0 m 562 730.0 l S 0 G
+BT /F2 13 Tf 50 718.0 Td (Ways to prompt for the add method) Tj ET
+BT /F1 10 Tf 50 691.0 Td (A signature-only prompt can let Copilot propose the complete method body. A second approach) Tj ET
+BT /F1 10 Tf 50 675.2 Td (is to write the signature and the input-validation line, then ask for the remaining) Tj ET
+BT /F1 10 Tf 50 659.4 Td (implementation. A third approach is to write an English comment that says to reject negative) Tj ET
+BT /F1 10 Tf 50 643.6 Td (values and add valid values to the running total.) Tj ET
+BT /F1 10 Tf 50 627.8 Td (These approaches are alternatives for exploring completions; the submitted implementation) Tj ET
+BT /F1 10 Tf 50 612.0 Td (uses the simplest direct check and addition. A loop is not needed to add one integer. If the) Tj ET
+BT /F1 10 Tf 50 596.2 Td (method later accepted a list of integers, a for or while loop could be appropriate, and the) Tj ET
+BT /F1 10 Tf 50 580.4 Td (result would need the same review and tests.) Tj ET
+BT /F2 13 Tf 50 564.6 Td (Applicability to my coding style) Tj ET
+BT /F1 10 Tf 50 537.7 Td (For this short, clearly defined task, Copilot is useful for drafting routine code and) Tj ET
+BT /F1 10 Tf 50 521.9 Td (suggesting ways to express it. My preferred style is small methods, explicit validation, and) Tj ET
+BT /F1 10 Tf 50 506.1 Td (minimal control flow. I would use Copilot as a starting point, then keep the clearest) Tj ET
+BT /F1 10 Tf 50 490.3 Td (correct version rather than accepting a longer completion automatically.) Tj ET
+BT /F2 13 Tf 50 474.5 Td (Benefits) Tj ET
+BT /F1 10 Tf 50 447.5 Td (Copilot can reduce repetitive typing, provide quick examples of Java syntax, help explore) Tj ET
+BT /F1 10 Tf 50 431.7 Td (alternative implementations, and produce a first draft of documentation. This is most useful) Tj ET
+BT /F1 10 Tf 50 415.9 Td (when the programmer already understands the intended behavior and can review the result.) Tj ET
+BT /F2 13 Tf 50 400.1 Td (Drawbacks) Tj ET
+BT /F1 10 Tf 50 373.2 Td (A completion can misunderstand requirements, omit edge cases, or introduce a bug while) Tj ET
+BT /F1 10 Tf 50 357.4 Td (looking plausible. It can also add unnecessary complexity or produce explanations that need) Tj ET
+BT /F1 10 Tf 50 341.6 Td (editing. The programmer remains responsible for understanding, testing, and maintaining the) Tj ET
+BT /F1 10 Tf 50 325.8 Td (final code.) Tj ET
+BT /F2 13 Tf 50 310.0 Td (Verification) Tj ET
+BT /F1 10 Tf 50 283.1 Td (Both Java files compile and the demonstration produces a sum of 24, resets to zero, and) Tj ET
+BT /F1 10 Tf 50 267.3 Td (reports the expected error for a negative input.) Tj ET
+BT /F1 8 Tf 50 28 Td (Assignment12  |  Page 3 of 3) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000136 00000 n 
+0000000206 00000 n 
+0000000281 00000 n 
+0000000349 00000 n 
+0000002325 00000 n 
+0000002471 00000 n 
+0000005407 00000 n 
+0000005553 00000 n 
+0000008390 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+8538
+%%EOF
